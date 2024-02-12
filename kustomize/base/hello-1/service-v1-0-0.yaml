@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    app: hello-1-v1-0-0
+    applicationId: app_7dbf5e42-d6b8-4bc7-b7c0-d0e57e6d19bb
+    version: v1.0.0
+    organizationId: org_af603abf-bad3-4507-9cff-237718aae732
+    projectId: project_c02f4460-ebd5-437f-8d43-f2d391b994a5
+  name: hello-1-v1-0-0
+spec:
+  selector:
+    app: hello-1-v1-0-0

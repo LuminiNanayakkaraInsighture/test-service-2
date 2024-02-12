@@ -1,0 +1,16 @@
+apiVersion: configs.skyu.io/v1
+kind: SkyUImagePullSecret
+metadata:
+  name: imagepull-docker
+  labels:
+    organizationId: org_af603abf-bad3-4507-9cff-237718aae732
+    projectId: project_c02f4460-ebd5-437f-8d43-f2d391b994a5
+  namespace: skyu-system
+  annotations:
+    replicator.v1.mittwald.de/replicate-to-matching: project-id=project_c02f4460-ebd5-437f-8d43-f2d391b994a5
+spec:
+  skyuControlPlaneAPI:
+    organizationId: org_af603abf-bad3-4507-9cff-237718aae732
+    projectId: project_c02f4460-ebd5-437f-8d43-f2d391b994a5
+  provider: docker
+  secretRef: 2537641d-7018-4dd7-a978-16e31ec2a18e
